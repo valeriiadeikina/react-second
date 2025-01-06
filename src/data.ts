@@ -1,4 +1,4 @@
-import type { TProducts } from './types';
+import type { TProduct } from './types';
 
 export const data = [
   {
@@ -71,7 +71,7 @@ export const data = [
   },
 ];
 
-export const products: TProducts[] = [
+export const products: TProduct[] = [
   {
     name: 'Nike Metcon 2',
     price: '130',
