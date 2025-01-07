@@ -1,8 +1,16 @@
-export type TProduct = {
-  name: string;
-  price: string;
-  color: string;
-  img: string;
+export type TMovies = {
+  movieName: string;
+  movieId: number;
+  price: number;
+  stars: number;
 };
 
-export type TProject = { img: string; category: string };
+export type TProduct = {
+  listing_id: number;
+  url: string;
+  mainImage: { url_570xN?: string };
+  title: string;
+  currency_code: string;
+  price: string;
+  quantity: number;
+};
