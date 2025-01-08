@@ -1,5 +1,5 @@
 import React from 'react';
-import ShopCard from './ShopCard';
+import ShopCard from './ShopCardWithImg';
 import type { TProduct } from '../../types';
 
 type ListingProps = {
@@ -8,9 +8,9 @@ type ListingProps = {
 
 export default function Listing({ items }: ListingProps): React.JSX.Element {
   return (
-    <div className='item-list'>
+    <div className="item-list">
       {items.map((card) => (
-        <ShopCard card={card} key={card.listing_id} />
+        <ShopCard key={card.listing_id} card={card} />
       ))}
     </div>
   );

@@ -17,7 +17,6 @@ type TRawData = {
 export default function Store(): React.JSX.Element {
   const parsedData = data as TRawData[];
 
-  parsedData.map((item, i, arr) => console.log(item.MainImage, i, arr.length));
   const products: TProduct[] = parsedData.map((item: TRawData) => ({
     listing_id: item.listing_id,
     url: item.url,
